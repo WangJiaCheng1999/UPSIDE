@@ -3,9 +3,19 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>Current time is @DateTime.Now</p>
+@functions{
+    public void printThings()
+    {
+        Console.WriteLine("dsadsadas");
+    }
+}
+<div class="container-fluid text-center "  >
+    <a>Hello @Model.Message</a>
+    <p>sss</p>
+    <button type="submit" class="btn btn-dark " asp-action="Print">Open an Unity Experiment!</button>
 </div> 
+
+
+
+
+

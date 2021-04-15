@@ -11,7 +11,7 @@ namespace UPSIDE.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-
+        public string Message = "eee";
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -19,7 +19,14 @@ namespace UPSIDE.Pages
 
         public void OnGet()
         {
-
+     
         }
+        
+        public void OnPostEee()
+        {
+            Message = "asd";
+        }
+
+        
     }
 }
